@@ -451,9 +451,9 @@ section {
   border-bottom: 1px solid #eee;
 }
 .portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
+	list-style: none;
+	font-size: 15px;
+	line-height: 28px;
 }
  
 .portfolio-details .portfolio-description h2 {
