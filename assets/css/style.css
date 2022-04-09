@@ -490,7 +490,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #149ddd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,43 +505,9 @@ section {
 	word-spacing: 0px;
 	letter-spacing: 2px;
 }
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #173b6c;
-}
-.contact .info .email p {
-  padding-top: 5px;
-  
-}
-.contact .info .social-links {
-  padding-left: 60px;
-}
  
+
  
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 
 /* skills */
 #skills{
@@ -573,6 +539,7 @@ section {
 }
 .breadcrumbs ol li + li {
   padding-left: 10px;
+  
 }
 .breadcrumbs ol li + li::before {
   display: inline-block;
