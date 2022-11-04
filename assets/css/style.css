@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #151617;
+  background: #0F0F0F;
   overflow-y: auto;
 }
 #header .profile img {
@@ -288,13 +288,13 @@ section {
 # About
 --------------------------------------------------------------*/
 #about{
-  background-color: #151617;
+  background-color: #0F0F0F;
   color: #FFFFFF; 
 }
 #about h2{
   color: white;
 }
-.about .content h3 {
+#about h3 {
   font-weight: 700;
   font-size: 26px;
   color: #149ddd;
@@ -469,7 +469,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 #contact{
-  background-color: #151617;
+  background-color: #0F0F0F;
   color: #eef1f5; 
 }
 #contact h2{
@@ -511,7 +511,7 @@ section {
 
 /* skills */
 #skills{
-  background-color: #151617;
+  background-color: #0F0F0F;
   color: white;
 }
 #skills h2{
@@ -571,7 +571,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #151617;
+  background: #0F0F0F;
 }
 #footer .copyright {
   text-align: center;
@@ -614,7 +614,7 @@ hover effect */
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #151617;
+  background-color: #0F0F0F;
 }
 
 .card-container:hover .overlay {
