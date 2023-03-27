@@ -5,12 +5,13 @@
 :root {
   --blue: #0F33FF;
   --white: #fff;
-  --black: #0F0F0F;
+  --black: #0C0C0C;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   color: #0C0C0C;
+  background-color: #0C0C0C;
 }
 
 a {
@@ -27,6 +28,71 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.glow-on-hover {
+    width: 280px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: var(--black);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.hero-button {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 360px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -70,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #0F0F0F;
+  background: var(--black);
   overflow-y: auto;
 }
 #header .profile img {
@@ -95,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: var(--black);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -219,12 +285,14 @@ background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../i
   min-width: 300px;
 }
 #hero h1 {
-  margin: 0 0 50px 120px;
+  margin: 90px 0px 30px 360px;
   font-size: 50px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
 }
+
+
 #hero  {
   color: #fff;
   margin-bottom: 50px;
@@ -232,7 +300,9 @@ background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../i
   font-family: "Poppins", sans-serif;
 }
 #hero p {
-  
+  margin: 0 0 30px 360px;
+  font-size: 21px;
+  font-weight: 300;
 }
 #hero h1 span {
   color: #fff;
@@ -254,6 +324,10 @@ background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../i
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  .hero-button {
+    font-weight: 500;
+    margin: auto;
   }
 }
 
@@ -298,7 +372,7 @@ section {
 # About
 --------------------------------------------------------------*/
 #about{
-  background-color: #0F0F0F;
+  background-color: var(--black);
   color: #FFFFFF; 
 }
 #about h2{
@@ -479,7 +553,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 #contact{
-  background-color: #0F0F0F;
+  background-color: var(--black);
   color: #eef1f5; 
 }
 #contact h2{
@@ -521,7 +595,7 @@ section {
 
 /* skills */
 #skills{
-  background-color: #0F0F0F;
+  background-color: var(--black);
   color: white;
 }
 #skills h2{
@@ -581,7 +655,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #0F0F0F;
+  background: var(--black);
 }
 #footer .copyright {
   text-align: center;
@@ -624,7 +698,7 @@ hover effect */
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #0F0F0F;
+  background-color: var(--black);
 }
 
 .card-container:hover .overlay {
