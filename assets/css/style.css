@@ -6,12 +6,12 @@
   --blue: #0F33FF;
   --white: #fff;
   --black: #0C0C0C;
-  --background-color: #111;
+  --nav: #1D1F23;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #0C0C0C;
+  color: white;
   background-color: #0C0C0C;
   box-sizing: border-box;
   margin: 0;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-button {
   font-size: 20px;
   font-weight: 600;
-  margin-right:  292px;
+  margin-right:  350px;
 }
 
 .glow-on-hover:before {
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: var(--black);
+  background:  #1D1F23;
   overflow-y: auto;
 }
 #header .profile img {
@@ -163,10 +163,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
-  background: var(--black);
-  color: #fff;
+
+  background: white;
+  color: var(--black);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -177,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
-  background: var(--blue);
+  background-color: var(--black);
   color: #fff;
   text-decoration: none;
 }
@@ -214,7 +215,8 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color:   #6f7180;
+ 
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -227,10 +229,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: white;
+
+  
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: var(--blue);
+  color:  white;
 }
 
 /* Mobile Navigation */
@@ -387,7 +394,7 @@ section {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color:  white;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -401,6 +408,9 @@ section {
   background-color: inherit;
   width: 50%;
 }
+.timecontainer p {
+ font-size:  18px;
+}
 
 /* The circles on the timeline */
 .timecontainer::after {
@@ -410,7 +420,7 @@ section {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid  var(--blue);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -459,10 +469,10 @@ section {
 }
 
 /* The actual content */
-.content {
+.timecontent {
   padding: 20px 30px;
-  background-color: var(--black);
-  color: white;
+  background-color: white;
+  color: black;
   position: relative;
   border-radius: 6px;
 }
@@ -500,37 +510,7 @@ section {
   }
 }
 
-#Timeline{
-  background-color: var(--black);
-
-}
-#Timeline h2{
  
-}
-#Timeline h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--blue);
-}
-.Timeline .content ul {
-
-}
-.Timeline .content ul li {
-  display: flex;
-  align-items: center;
-}
-.Timeline .content ul strong {
-  margin-right: 10px;
-}
-.Timeline .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--blue);
-  line-height: 0;
-}
-.Timeline .content p:last-child {
-  margin-bottom: 0;
-}
 
 
 /*--------------------------------------------------------------
@@ -820,7 +800,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: var(--black);
+  background: #1D1F23;
 }
 #footer .copyright {
   text-align: center;
