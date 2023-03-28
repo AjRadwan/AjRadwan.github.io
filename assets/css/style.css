@@ -376,7 +376,8 @@ section {
   left: 0;
 }
 .section-title p {
-  margin-bottom: 0;
+  
+  font-size: 19px;
 }
 
 
@@ -550,7 +551,6 @@ section {
 
 }
 
-
 .services h4 {
   color: #fff;
   transition: inherit;
@@ -561,11 +561,12 @@ section {
   font-size: 27px;
 }
 .services p {
-  color:#dfdfdf;
-  transition:inherit;
+  color: #dfdfdf;
+  transition: inherit;
   transition-delay: .1s;
   margin-top: 20px;
   text-align: center;
+  font-size: 17px;
 }
 
 
