@@ -58,8 +58,8 @@
     <ul>
       <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
       <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-      <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me</span></a></li>
         <li><a href="#work" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>My Work</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me</span></a></li>
       <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
     </ul>
   </nav><!-- .nav-menu -->
@@ -226,37 +226,62 @@
 
 
     
-<!-- ======= Portfolio Section ======= -->
-<section id="work" class="portfolio section-bg">
+<!-- ======= work Section ======= -->
+<section id="work" class="work section-bg">
   <div class="container">
   <div class="section-title">
-      <h2>Portfolio</h2>
-      <p>Showcasing complete fully functional projects. theses projects demonstrates front-end and back-end, <b>API,</b>  security and database development. <b>And Much More..</b> </p> 
+      <h2>My work</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/portfolio/details-1.png" alt="John" style="width:100%">
+            <div class="container">
+              <h1>Jane Doe</h1> 
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <div class="text-center">
+                <a><button class="glow-on-hover work-button" type="button">Read More &#8594;</button></a>
+               </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/portfolio/details-1.png" alt="John" style="width:100%">
+            <div class="container">
+              <h1>Mike Ross</h1>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                 <div class="text-center">
+      <a><button class="glow-on-hover work-button" type="button">Read More &#8594;</button></a>
+     </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/portfolio/details-1.png" alt="John" style="width:100%">
+            <div class="container">
+              <h1>John Doe</h1>
+              <p>Some text that describes me lorem ipsum ipsum lorem Lorem </p>
+     <div class="text-center">
+      <a><button class="glow-on-hover work-button" type="button">Read More &#8594;</button></a>
+     </div>
+ 
+            </div>
+          </div>
+        </div>
+      </div>      
     </div>
 
     <div class="row" data-aos="fade-up">
       <div class="col-lg-12 d-flex justify-content-center">
-        <ul id="portfolio-flters">      
+        <ul id="work-flters">      
         </ul>
       </div>
     </div>
-
-<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-      <div class="portfolio-links">
-        <a href="work.html" title="More Details"><i class="bx bx-link"></i></a>
-      </div>
-    </div>
-    
   </div>
-  
-      </div>
-
-  </div>
-</section><!-- End Portfolio Section -->
+</section><!-- End work Section -->
 
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
@@ -293,7 +318,6 @@
         I'm proud of what I do and the impact I make. After all, isn't it better to focus on the value you bring rather than just a title?
          </p>
 
-  
   </div>
     </div>
   </div>
@@ -344,16 +368,7 @@
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
 
-<!-- Template Main JS File -->
-<script>
-  new fullpage('#fullpage', {  
- 
-  licenseKey: 'YOUR KEY HERE',
 
-  navigation: true,
-  timelineColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401'],
-});
-</script>
 
 <script src="assets/js/main.js"></script>
 
