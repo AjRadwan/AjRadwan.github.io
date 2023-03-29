@@ -792,6 +792,43 @@ section {
   color: white;
 }
 /*--------------------------------------------------------------
+# Newsletter
+--------------------------------------------------------------*/
+.iframesub iframe{
+  width: 50%;
+}
+
+.subme{
+  height: 20vh;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.iframesub{
+  display: flex;
+  justify-content: center;
+   align-items: center;
+}
+
+.subme h4 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 26px;
+ 
+}
+
+.subme p {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .iframesub iframe{
+    width: 100%;
+  }
+  
+}
+/*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
