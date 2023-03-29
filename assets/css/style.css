@@ -330,7 +330,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../i
   #hero h1 {
     margin: 0;
     padding: 0px 0px 0px 25px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 56px;
 }
@@ -338,8 +338,8 @@ background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../i
   margin: 0;
   padding-left: 25px;
   padding-bottom: 30px;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 16px;
+  
 }
   .hero-button {
     font-weight: 500;
@@ -485,7 +485,7 @@ section {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
@@ -495,9 +495,12 @@ section {
   .timecontainer {
   width: 100%;
   padding-left: 70px;
-  padding-right: 25px;
+  padding-right: 0px;
   }
   
+  .timecontainer p {
+    font-size:  16px;
+   }
   /* Make sure that all arrows are pointing leftwards */
   .timecontainer::before {
   left: 60px;
@@ -641,31 +644,12 @@ section {
 #about h2{
   color: var(--black);
 }
-#about h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--blue);
-}
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-.about .content ul strong {
-  margin-right: 10px;
-}
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--blue);
-  line-height: 0;
-}
-.about .content p:last-child {
-  margin-bottom: 0;
+
+@media screen and (max-width: 650px) {
+
+  #about p{
+      font-size: 16px;
+  }
 }
  
 /*--------------------------------------------------------------
