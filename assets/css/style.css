@@ -794,20 +794,13 @@ section {
 /*--------------------------------------------------------------
 # Newsletter
 --------------------------------------------------------------*/
-.iframesub iframe{
-  width: 50%;
-}
 
 .subme{
   height: 20vh;
   margin-top: 150px;
   margin-bottom: 150px;
 }
-.iframesub{
-  display: flex;
-  justify-content: center;
-   align-items: center;
-}
+
 
 .subme h4 {
   text-align: center;
@@ -821,13 +814,13 @@ section {
   font-size: 18px;
 }
 
-
-@media screen and (max-width: 650px) {
-  .iframesub iframe{
-    width: 100%;
-  }
-  
+.sub-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 330px;
 }
+  
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
